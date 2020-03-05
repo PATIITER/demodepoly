@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      text to speech
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label>Text</ion-label>
+      <ion-input [(ngModel)]="text"></ion-input>
+    </ion-item>
+
+
+    <ion-button full (click)="play()">Play Text</ion-button>
+  </ion-list>
+  <ion-list>
+    <ion-button full (click)="startcamera()">start camera</ion-button>
+    <ion-img [src]="pic"></ion-img>
+  </ion-list>
+  <ion-list>
+    <ion-button full (click)="openMyVideo('2DMKQQE9L6s')"> watch video </ion-button>
+  </ion-list>
+
+  <a href="https://www.youtube.com/watch?v=2DMKQQE9L6s"> play youtube</a>
+
+</ion-content>
